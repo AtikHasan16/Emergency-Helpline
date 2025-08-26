@@ -31,7 +31,9 @@
   <body class="roboto bg-[#F5FFF6]">
     <!-- navbar -->
     <nav class="w-full bg-white py-4 shadow">
-      <div class="flex justify-between items-center max-w-[1800px] mx-auto">
+      <div
+        class="flex justify-between items-center flex-col gap-y-5 md:flex-row max-w-[1800px] mx-auto"
+      >
         <div>
           <div>
             <a class="flex items-center gap-2" href="#">
@@ -48,7 +50,7 @@
             </a>
           </div>
         </div>
-        <div class="live-nav flex justify-around items-center gap-5">
+        <div class="live-nav flex flex-wrap justify-around items-center gap-5">
           <div
             class="rounded-full bg-green-100 px-8 py-3 text-xl font-bold flex items-center gap-2"
           >
@@ -71,10 +73,14 @@
       </div>
     </nav>
     <!--Main Layout  -->
-    <main class="max-w-[1800px] mx-auto grid grid-cols-12 gap-8 py-12 pb-20">
+    <main
+      class="max-w-[1800px] mx-auto grid grid-rows-1 md:grid-cols-12 gap-8 py-12 pb-20"
+    >
       <div id="card-container" class="col-span-9">
         <!-- card 1 -->
-        <div class="grid grid-cols-3 gap-7">
+        <div
+          class="grid grid-cols-1 lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2 gap-7"
+        >
           <div class="bg-white shadow-xl p-8 rounded-2xl">
             <div class="flex items-center justify-between">
               <img class="w-10" src="./assets/emergency.png" alt="" /><i
@@ -361,7 +367,7 @@
         </div>
       </div>
       <!--Right side layout - history -->
-      <div class="col-span-3 bg-white shadow-xl p-6 rounded-2xl">
+      <div class="col-span-3 row-start-1 bg-white shadow-xl p-6 rounded-2xl">
         <div class="flex justify-between items-center gap-2 mb-4">
           <h1 class="font-semibold text-xl">
             <i class="fa-regular fa-clock pr-2"></i>Call history
