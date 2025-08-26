@@ -22,7 +22,7 @@ function setCopyId(value) {
   const copyCount = (document.getElementById("copy-count").innerText = value);
   return copyCount;
 }
-// count heart
+// For count heart
 let heartCount = Number(getElementId("heart-count"));
 const heartButton = getElementClass("heart-button");
 for (const button of heartButton) {
@@ -43,7 +43,7 @@ for (const button of callButtons) {
       alert("📞 Calling " + CardTitle + " : " + emergencyNumber);
       setCoinId(Number((coinCount = coinCount - 20)));
 
-      //   add to history
+      //   add to history card
       const historyContainer = document.getElementById("history-container");
       const historyDiv = document.createElement("div");
       historyDiv.innerHTML = `
